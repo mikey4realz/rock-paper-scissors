@@ -38,9 +38,11 @@ if(player_choice != 0 and player_choice != 1 and player_choice != 2):
 
 print(f"\nYou: {choices[player_choice]}\nvs\n\nComputer: \n{choices[computer_choice]}")
 
-if player_choice == 0 and computer_choice == 2:
+if player_choice == 0 and computer_choice == 2: #Rock Beats Paper
   print("You Win!")
-elif player_choice > computer_choice:
+elif computer_choice == 0 and player_choice == 2: #Rock Beats Paper
+  print("You Lose.")
+elif player_choice > computer_choice: #Paper Beats Rock, Scissors beats Paper
   print("You Win!")
 elif player_choice == computer_choice:
   print("It is a Draw.")
